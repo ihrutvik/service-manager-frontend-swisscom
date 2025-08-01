@@ -1,0 +1,59 @@
+<h2>🔧 Service Management</h2>
+
+<section>
+  <label for="fetchId">🔍 Fetch Existing Service</label><br />
+  <input id="fetchId" [(ngModel)]="serviceIdToFetch" placeholder="Enter Service ID" />
+  <button (click)="fetchService()">Fetch</button>
+</section>
+
+<hr />
+
+<section>
+  <h3>📄 Service Details</h3>
+  <label>Service ID:</label>
+  <input [(ngModel)]="service.id" placeholder="Service ID" />
+</section>
+
+<hr />
+
+<section *ngFor="let resource of service.resources; let i = index">
+  <fieldset style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">
+    <legend>📦 Resource {{ i + 1 }}</legend>
+
+    <label>Resource ID:</label>
+    <input [(ngModel)]="resource.id" placeholder="Resource ID" />
+
+    <div *ngFor="let owner of resource.owners; let j = index" style="margin-top: 10px; padding-left: 10px;">
+      <fieldset style="border: 1px dashed #999; padding: 10px;">
+        <legend>👤 Owner {{ j + 1 }}</legend>
+
+        <label>Owner ID:</label>
+        <input [(ngModel)]="owner.id" />
+
+        <label>Name:</label>
+        <input [(ngModel)]="owner.name" />
+
+        <label>Account Number:</label>
+        <input [(ngModel)]="owner.accountNumber" />
+
+        <label>Level:</label>
+        <input type="number" [(ngModel)]="owner.level" />
+
+        <button (click)="removeOwner(i, j)">❌ Remove Owner</button>
+      </fieldset>
+    </div>
+
+    <button (click)="addOwner(i)">➕ Add Owner</button>
+    <button (click)="removeResource(i)">❌ Remove Resource</button>
+  </fieldset>
+</section>
+
+<button (click)="addResource()">➕ Add Resource</button>
+
+<hr />
+
+<section>
+  <button (click)="createService()">💾 Create</button>
+  <button (click)="updateService()">🔄 Update</button>
+  <button (click)="deleteService()">🗑️ Delete</button>
+</section>

@@ -1,0 +1,32 @@
+
+> service-manger-forntend@0.0.0 build
+> ng build
+
+❯ Building...
+✔ Building...
+Browser bundles      
+Initial chunk files   | Names            |  Raw size | Estimated transfer size
+main-5CPSOPCE.js      | main             | 173.71 kB |                48.36 kB
+polyfills-B6TNHZQ6.js | polyfills        |  34.58 kB |                11.32 kB
+styles-5INURTSO.css   | styles           |   0 bytes |                 0 bytes
+
+                      | Initial total    | 208.29 kB |                59.68 kB
+
+
+Server bundles       
+Initial chunk files   | Names            |  Raw size
+server.mjs            | server           | 845.38 kB |                        
+main.server.mjs       | main.server      | 726.00 kB |                        
+polyfills.server.mjs  | polyfills.server | 266.08 kB |                        
+chunk-X2SEQXRR.mjs    | -                |   2.41 kB |                        
+chunk-GFUZYSQG.mjs    | -                |   1.24 kB |                        
+
+Lazy chunk files      | Names            |  Raw size
+chunk-EJSJJTUO.mjs    | xhr2             |  12.14 kB |                        
+chunk-TNO4MGIL.mjs    | xhr2             |  12.07 kB |                        
+
+Prerendered 1 static route.
+Application bundle generation complete. [11.208 seconds]
+
+Output location: /Users/a23135322/Downloads/service-manger-forntend/dist/service-manger-forntend
+
