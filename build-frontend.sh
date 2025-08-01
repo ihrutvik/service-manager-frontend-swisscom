@@ -27,10 +27,10 @@ npm install
 # Step 4: Create logs directory
 mkdir -p "$LOG_DIR"
 echo "📁 Logs will be written to $LOG_FILE"
-ng serve --proxy-config proxy.conf.json
 
 # Step 5: Build project using Vite
 echo "🏗️  Running Vite build..."
 npm run build | tee "$LOG_FILE"
 
 echo "✅ Build completed successfully!"
+ng serve --proxy-config proxy.conf.json
