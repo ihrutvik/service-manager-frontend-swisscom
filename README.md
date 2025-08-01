@@ -44,8 +44,7 @@ public/                      👉 Static assets
 
 ```bash
 chmod +x build-frontend.sh
-./run-frontend.sh
-ng serve
+./build-frontend.sh
 ```
 
 Then open [http://localhost:4200](http://localhost:4200) in your browser.
