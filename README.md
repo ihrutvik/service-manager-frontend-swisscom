@@ -71,8 +71,6 @@ If your backend server is **not running on `http://localhost:8080`**, you can ch
 
 > ✅ Replace `"target"` with your actual backend URL if needed (e.g., `"http://localhost:9090"` or a staging server)
 
-> 💡 This proxy is **used only in development** (`ng serve` or `npm run dev`) and not during production builds.
-
 ---
 
 
